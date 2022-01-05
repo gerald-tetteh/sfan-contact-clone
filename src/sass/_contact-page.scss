@@ -1,2 +1,38 @@
 .contact {
+  &__header {
+    height: 91vh;
+    background-image: url(../images/contact_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6.4rem;
+    padding-right: 2.4rem;
+    @include respond(tab-port-sm) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      background-position: right;
+    }
+
+    &__text {
+      color: $color-white;
+      font-size: 1.6rem;
+
+      & span {
+        display: block;
+      }
+    }
+    &__button {
+      border: none;
+      background-color: $color-dark-blue;
+      color: $color-white;
+      padding: 1.2rem 1.6rem;
+      font-weight: 600;
+      font-family: $font-montserrat;
+      font-size: 1.6rem;
+    }
+  }
 }

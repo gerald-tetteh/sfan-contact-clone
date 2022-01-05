@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+.heading-1 {
+  font-size: 9rem;
+  color: #0099ff;
+  text-transform: uppercase;
+  line-height: 7rem;
+  font-weight: 900; }
+  @media only screen and (max-width: 43.75em) {
+    .heading-1 {
+      font-size: 3rem;
+      line-height: 2.3rem; } }
+
 *,
 *::after,
 *::before {
@@ -11,7 +22,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff; }
 
 .width-2 {
   width: 3rem !important; }
@@ -21,6 +33,46 @@ body {
 
 .m-0 {
   margin: 0 !important; }
+
+.mb-1 {
+  margin-bottom: 1rem !important; }
+
+.mb-2 {
+  margin-bottom: 2rem !important; }
+
+.d-block {
+  display: block !important; }
+
+.contact__header {
+  height: 91vh;
+  background-image: url(../images/contact_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6.4rem;
+  padding-right: 2.4rem; }
+  @media only screen and (max-width: 43.75em) {
+    .contact__header {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      background-position: right; } }
+  .contact__header__text {
+    color: #fff;
+    font-size: 1.6rem; }
+    .contact__header__text span {
+      display: block; }
+  .contact__header__button {
+    border: none;
+    background-color: #000a37;
+    color: #fff;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem; }
 
 .navbar {
   display: flex;
