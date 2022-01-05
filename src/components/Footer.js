@@ -1,4 +1,7 @@
 import sfanImage from "../images/sfan.png";
+import locationImage from "../images/location.png";
+import telephoneImage from "../images/telephone.png";
+import mailImage from "../images/mail.png";
 
 const Footer = () => {
   return (
@@ -106,7 +109,34 @@ const Footer = () => {
             helping them turn their passion into businesses and fulfilling
             careers.
           </p>
-          <div className="footer__address__contact"></div>
+          <div className="footer__address__contact">
+            <div>
+              <img
+                className="mr-1 width-2"
+                src={locationImage}
+                alt="Location"
+              />
+              <p className="footer__address__text m-0">
+                King Solomon's Height, 26, Mango St, Accra
+              </p>
+            </div>
+            <div>
+              <img
+                className="mr-1 width-2"
+                src={telephoneImage}
+                alt="Telephone"
+              />
+              <p className="footer__address__text m-0">
+                <a href="tel:+233302803935">030 280 2935</a>
+              </p>
+            </div>
+            <div>
+              <img className="mr-1 width-2" src={mailImage} alt="Mail" />
+              <p className="footer__address__text m-0">
+                <a href="mailto:info@sfanonline.org">info@sfanonline.org</a>
+              </p>
+            </div>
+          </div>
         </section>
       </div>
       <div className="footer__credits">

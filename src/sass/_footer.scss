@@ -2,6 +2,9 @@
   background-color: $color-dark-blue;
   color: $color-white;
   padding: 8rem 2.4rem 4rem 8rem;
+  @include respond(phone) {
+    padding: 2.4rem;
+  }
 
   &__heading {
     color: $color-light-blue-2;
@@ -11,6 +14,9 @@
   }
   &__main {
     display: flex;
+    @include custom-query(max-width, 63.8125rem) {
+      flex-direction: column;
+    }
   }
   &__contact,
   &__links,
@@ -23,6 +29,11 @@
     &__top,
     &__bottom {
       display: flex;
+    }
+    &__top {
+      @include respond(phone) {
+        flex-direction: column;
+      }
     }
     &__bottom {
       margin-top: 2.5rem;
@@ -49,6 +60,10 @@
   }
 
   &__address {
+    @include respond(phone) {
+      margin-top: 3rem;
+    }
+
     &__image {
       height: auto;
       width: 20rem;
@@ -59,6 +74,27 @@
       color: $color-light-blue-2;
       line-height: 1.5;
       margin-top: 0.7rem;
+    }
+    &__contact {
+      margin-top: 1.7rem;
+
+      & div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7rem;
+
+        & a,
+        & a:link,
+        & a:visited {
+          text-decoration: none;
+          color: $color-light-blue-2;
+          transition: color 0.2s;
+
+          &:hover {
+            color: $color-light-blue;
+          }
+        }
+      }
     }
   }
   &__credits__text {
