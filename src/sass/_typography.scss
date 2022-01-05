@@ -8,4 +8,14 @@
     font-size: 3rem;
     line-height: 2.3rem;
   }
+
+  &--body {
+    font-size: 5.6rem;
+    line-height: 4.5rem;
+    text-transform: none;
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+      line-height: 3.2rem;
+    }
+  }
 }

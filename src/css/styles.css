@@ -9,6 +9,14 @@
     .heading-1 {
       font-size: 3rem;
       line-height: 2.3rem; } }
+  .heading-1--body {
+    font-size: 5.6rem;
+    line-height: 4.5rem;
+    text-transform: none; }
+    @media only screen and (max-width: 56.25em) {
+      .heading-1--body {
+        font-size: 3.5rem;
+        line-height: 3.2rem; } }
 
 *,
 *::after,
@@ -43,6 +51,9 @@ body {
 .d-block {
   display: block !important; }
 
+.align-center {
+  text-align: center !important; }
+
 .contact__header {
   height: 91vh;
   background-image: url(../images/contact_hero.jpg);
@@ -73,6 +84,141 @@ body {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem; }
+
+.contact__contact-options {
+  padding: 6.4rem 9.6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact__contact-options {
+      padding: 6.4rem 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact__contact-options {
+      padding: 6.4rem 2rem; } }
+  .contact__contact-options div.options-container {
+    display: flex;
+    margin-top: 2.5rem; }
+    @media only screen and (max-width: 43.75em) {
+      .contact__contact-options div.options-container {
+        flex-direction: column; } }
+  .contact__contact-options__option {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    .contact__contact-options__option__title {
+      font-weight: 900;
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem; }
+    .contact__contact-options__option__body {
+      margin-bottom: 1rem; }
+    .contact__contact-options__option__link, .contact__contact-options__option__link:visited, .contact__contact-options__option__link:link {
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      padding: 1.2rem 1.6rem;
+      background-color: #f9fafb;
+      align-self: flex-start;
+      transition: all 0.5s; }
+      @media only screen and (max-width: 43.75em) {
+        .contact__contact-options__option__link, .contact__contact-options__option__link:visited, .contact__contact-options__option__link:link {
+          margin-bottom: 1.5rem; } }
+      .contact__contact-options__option__link:hover, .contact__contact-options__option__link:visited:hover, .contact__contact-options__option__link:link:hover {
+        background-color: #0099ff;
+        color: #fff; }
+
+.contact__resources {
+  padding: 4rem 9.6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact__resources {
+      padding: 6.4rem 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact__resources {
+      padding: 6.4rem 2rem; } }
+  .contact__resources div.resources-container {
+    display: flex;
+    margin-top: 4.5rem;
+    gap: 3rem; }
+    @media only screen and (max-width: 43.75em) {
+      .contact__resources div.resources-container {
+        flex-direction: column; } }
+  .contact__resources__resource {
+    display: flex;
+    flex-direction: column; }
+    .contact__resources__resource__content {
+      padding: 2.4rem; }
+    .contact__resources__resource__link, .contact__resources__resource__link:link, .contact__resources__resource__link:visited {
+      text-decoration: none;
+      color: #fff;
+      margin-top: 4rem;
+      align-self: flex-end;
+      padding: 1.2rem 1.6rem;
+      background-color: #000a37;
+      transition: all 0.5s;
+      font-weight: 500; }
+      .contact__resources__resource__link:hover, .contact__resources__resource__link:link:hover, .contact__resources__resource__link:visited:hover {
+        background-color: #0099ff; }
+
+.contact__socials {
+  padding: 8rem 9.6rem;
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 43.75em) {
+    .contact__socials {
+      flex-direction: column;
+      padding: 8rem 4rem; } }
+  .contact__socials__social {
+    text-align: center; }
+    .contact__socials__social h2 {
+      font-size: 1.6rem;
+      color: #000a37; }
+
+.contact__directions {
+  display: flex;
+  background-image: url(../images/gray_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12.8rem;
+  padding-bottom: 9.6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact__directions {
+      flex-direction: column; } }
+  .contact__directions div {
+    flex: 1;
+    padding-left: 8rem;
+    padding-right: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .contact__directions div {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .contact__directions__image {
+      text-align: center; } }
+  .contact__directions__image img {
+    width: 70%;
+    height: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .contact__directions__image img {
+        width: 100%;
+        padding-bottom: 2.5rem; } }
+  .contact__directions__content__heading {
+    font-size: 5.6rem;
+    color: #000a37;
+    font-weight: 900;
+    line-height: 4.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .contact__directions__content__heading {
+        font-size: 3rem;
+        line-height: 2.3rem; } }
+  .contact__directions__content__body {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    color: #000a37;
+    font-weight: 600; }
+  .contact__directions__content__link, .contact__directions__content__link:link, .contact__directions__content__link:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 1.6rem;
+    background-color: #000a37; }
 
 .navbar {
   display: flex;
@@ -311,3 +457,6 @@ body {
     cursor: pointer; }
     .form__submit:hover {
       background-color: #0099ff; }
+
+.card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
