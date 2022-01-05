@@ -1,2 +1,212 @@
 .contact {
+  &__header {
+    height: 91vh;
+    background-image: url(../images/contact_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6.4rem;
+    padding-right: 2.4rem;
+    @include respond(tab-port-sm) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      background-position: right;
+    }
+
+    &__text {
+      color: $color-white;
+      font-size: 1.6rem;
+
+      & span {
+        display: block;
+      }
+    }
+    &__button {
+      border: none;
+      background-color: $color-dark-blue;
+      color: $color-white;
+      padding: 1.2rem 1.6rem;
+      font-weight: 600;
+      font-family: $font-montserrat;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__contact-options {
+    padding: 6.4rem 9.6rem;
+    @include respond(tab-port) {
+      padding: 6.4rem 4rem;
+    }
+    @include respond(phone) {
+      padding: 6.4rem 2rem;
+    }
+
+    & div.options-container {
+      display: flex;
+      margin-top: 2.5rem;
+      @include respond(tab-port-sm) {
+        flex-direction: column;
+      }
+    }
+    &__option {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      &__title {
+        font-weight: 900;
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+      }
+      &__body {
+        margin-bottom: 1rem;
+      }
+      &__link,
+      &__link:visited,
+      &__link:link {
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 700;
+        padding: 1.2rem 1.6rem;
+        background-color: $color-grey;
+        align-self: flex-start;
+        transition: all 0.5s;
+        @include respond(tab-port-sm) {
+          margin-bottom: 1.5rem;
+        }
+
+        &:hover {
+          background-color: $color-light-blue;
+          color: $color-white;
+        }
+      }
+    }
+  }
+  &__resources {
+    padding: 4rem 9.6rem;
+    @include respond(tab-port) {
+      padding: 6.4rem 4rem;
+    }
+    @include respond(phone) {
+      padding: 6.4rem 2rem;
+    }
+
+    & div.resources-container {
+      display: flex;
+      margin-top: 4.5rem;
+      gap: 3rem;
+      @include respond(tab-port-sm) {
+        flex-direction: column;
+      }
+    }
+    &__resource {
+      display: flex;
+      flex-direction: column;
+
+      &__content {
+        padding: 2.4rem;
+      }
+      &__link,
+      &__link:link,
+      &__link:visited {
+        text-decoration: none;
+        color: $color-white;
+        margin-top: 4rem;
+        align-self: flex-end;
+        padding: 1.2rem 1.6rem;
+        background-color: $color-dark-blue;
+        transition: all 0.5s;
+        font-weight: 500;
+
+        &:hover {
+          background-color: $color-light-blue;
+        }
+      }
+    }
+  }
+  &__socials {
+    padding: 8rem 9.6rem;
+    display: flex;
+    justify-content: space-around;
+    @include respond(tab-port-sm) {
+      flex-direction: column;
+      padding: 8rem 4rem;
+    }
+
+    &__social {
+      text-align: center;
+
+      & h2 {
+        font-size: 1.6rem;
+        color: $color-dark-blue;
+      }
+    }
+  }
+  &__directions {
+    display: flex;
+    background-image: url(../images/gray_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12.8rem;
+    padding-bottom: 9.6rem;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    & div {
+      flex: 1;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      @include respond(tab-port) {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+      }
+    }
+    &__image {
+      @include respond(tab-port) {
+        text-align: center;
+      }
+
+      img {
+        width: 70%;
+        height: auto;
+        @include respond(tab-port) {
+          width: 100%;
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
+    &__content {
+      &__heading {
+        font-size: 5.6rem;
+        color: $color-dark-blue;
+        font-weight: 900;
+        line-height: 4.5rem;
+        @include respond(tab-port) {
+          font-size: 3rem;
+          line-height: 2.3rem;
+        }
+      }
+      &__body {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.8rem;
+        color: $color-dark-blue;
+        font-weight: 600;
+      }
+      &__link,
+      &__link:link,
+      &__link:visited {
+        text-decoration: none;
+        color: $color-white;
+        padding: 1.2rem 1.6rem;
+        background-color: $color-dark-blue;
+      }
+    }
+  }
 }
