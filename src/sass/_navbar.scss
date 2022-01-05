@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-dark-blue;
+    padding: 0.5rem 1.6rem;
+    align-items: center;
+  }
+  &__brand__img {
+    height: auto;
+    width: 20rem;
+  }
+  &__nav {
+    display: flex;
+    list-style: none;
+    color: $color-white;
+    text-transform: uppercase;
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &-item {
+      padding: 1.2rem 1.6rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      @include respond(tab-port) {
+        padding: 0;
+      }
+
+      &:hover {
+        background-color: $color-black;
+      }
+      &--link {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      & span {
+        @include respond(tab-port) {
+          padding: 1.2rem 1.6rem;
+          display: block;
+        }
+      }
+    }
+    &__button {
+      display: none;
+      @include respond(tab-port) {
+        display: block;
+      }
+
+      display: none;
+      width: 2.8rem;
+      height: 0.1rem;
+      background-color: $color-white;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 0.1rem;
+        background-color: $color-white;
+      }
+      &::before {
+        top: -0.7rem;
+      }
+      &::after {
+        bottom: -0.7rem;
+      }
+      @include respond(tab-port) {
+        display: block;
+      }
+    }
+    &--mobile {
+      display: none;
+      background-color: $color-dark-blue;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 8rem;
+    }
+    &__show {
+      display: block;
+
+      @include custom-query(min-width, 56.25em) {
+        display: none;
+      }
+    }
+
+    // &__checkbox: checked + &__main;
+  }
+  &__link,
+  &__link:visited,
+  &__link:link {
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}

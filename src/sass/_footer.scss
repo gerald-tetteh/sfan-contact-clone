@@ -1,0 +1,21 @@
+.footer {
+  background-color: $color-dark-blue;
+  color: $color-white;
+  padding: 8rem 2.4rem 4rem 8rem;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contact {
+  }
+  &__links {
+  }
+  &__address {
+  }
+  &__credits__text {
+    margin-top: 2rem;
+    text-align: center;
+    color: $color-light-blue-2;
+  }
+}
