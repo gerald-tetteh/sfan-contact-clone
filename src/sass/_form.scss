@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+
+  &__input {
+    padding: 1.2rem 0 1.2rem 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: 2px solid $color-light-blue-3;
+    background-color: transparent;
+    margin-bottom: 0.8rem;
+    caret-color: $color-white;
+    color: $color-light-blue-2;
+    font-weight: 300;
+    font-family: $font-montserrat;
+
+    &:focus {
+      outline: $color-white solid 1px;
+      border-radius: 3px;
+    }
+    &--textarea {
+      height: 18rem;
+    }
+    &::placeholder {
+      font-family: $font-montserrat;
+    }
+  }
+  &__submit {
+    border: none;
+    background-color: $color-light-blue-3;
+    margin-top: 0.8rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 500;
+    padding: 1rem 0;
+    font-family: $font-montserrat;
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-light-blue;
+    }
+  }
+}

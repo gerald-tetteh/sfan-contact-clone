@@ -98,13 +98,51 @@ body {
   background-color: #000a37;
   color: #fff;
   padding: 8rem 2.4rem 4rem 8rem; }
+  .footer__heading {
+    color: #93c5fd;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem; }
   .footer__main {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
+  .footer__contact, .footer__links, .footer__address {
+    flex: 1; }
+  .footer__links__top, .footer__links__bottom {
+    display: flex; }
+  .footer__links__bottom {
+    margin-top: 2.5rem; }
+    .footer__links__bottom .fab {
+      color: #93c5fd;
+      margin-right: 2.3rem;
+      transition: transform 0.3s; }
+      .footer__links__bottom .fab:hover {
+        transform: scale(1.6); }
+  .footer__links__left, .footer__links__right {
+    flex: 1;
+    list-style: none;
+    margin-top: 1rem; }
+  .footer__links__item {
+    margin-bottom: 1.5rem; }
+  .footer__address__image {
+    height: auto;
+    width: 20rem;
+    display: block;
+    margin-left: -1.5rem; }
+  .footer__address__text {
+    color: #93c5fd;
+    line-height: 1.5;
+    margin-top: 0.7rem; }
   .footer__credits__text {
     margin-top: 2rem;
     text-align: center;
     color: #93c5fd; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.2s; }
+    .footer__link:hover, .footer__link:link:hover, .footer__link:visited:hover {
+      color: #93c5fd; }
 
 .dropdown {
   position: relative; }
@@ -143,3 +181,41 @@ body {
         display: block; } }
   .dropdown__active {
     background-color: #000; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 85%; }
+  .form__input {
+    padding: 1.2rem 0 1.2rem 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: 2px solid #60a5fa;
+    background-color: transparent;
+    margin-bottom: 0.8rem;
+    caret-color: #fff;
+    color: #93c5fd;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif; }
+    .form__input:focus {
+      outline: #fff solid 1px;
+      border-radius: 3px; }
+    .form__input--textarea {
+      height: 18rem; }
+    .form__input::placeholder {
+      font-family: "Montserrat", sans-serif; }
+  .form__submit {
+    border: none;
+    background-color: #60a5fa;
+    margin-top: 0.8rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+    cursor: pointer; }
+    .form__submit:hover {
+      background-color: #0099ff; }

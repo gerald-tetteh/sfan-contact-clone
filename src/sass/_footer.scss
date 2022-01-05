@@ -3,19 +3,79 @@
   color: $color-white;
   padding: 8rem 2.4rem 4rem 8rem;
 
+  &__heading {
+    color: $color-light-blue-2;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
   &__main {
     display: flex;
-    justify-content: space-between;
+  }
+  &__contact,
+  &__links,
+  &__address {
+    flex: 1;
   }
   &__contact {
   }
   &__links {
+    &__top,
+    &__bottom {
+      display: flex;
+    }
+    &__bottom {
+      margin-top: 2.5rem;
+
+      & .fab {
+        color: $color-light-blue-2;
+        margin-right: 2.3rem;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.6);
+        }
+      }
+    }
+    &__left,
+    &__right {
+      flex: 1;
+      list-style: none;
+      margin-top: 1rem;
+    }
+    &__item {
+      margin-bottom: 1.5rem;
+    }
   }
+
   &__address {
+    &__image {
+      height: auto;
+      width: 20rem;
+      display: block;
+      margin-left: -1.5rem;
+    }
+    &__text {
+      color: $color-light-blue-2;
+      line-height: 1.5;
+      margin-top: 0.7rem;
+    }
   }
   &__credits__text {
     margin-top: 2rem;
     text-align: center;
     color: $color-light-blue-2;
+  }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 600;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-light-blue-2;
+    }
   }
 }
