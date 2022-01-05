@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sfan-contact-clone/static/css/main.70e49d60.css",
+    "main.js": "/sfan-contact-clone/static/js/main.06aa50e5.js",
+    "static/js/787.370a98e2.chunk.js": "/sfan-contact-clone/static/js/787.370a98e2.chunk.js",
+    "static/media/gray_bg.png": "/sfan-contact-clone/static/media/gray_bg.38836a6ae2774efe0582.png",
+    "static/media/contact_hero.jpg": "/sfan-contact-clone/static/media/contact_hero.e863ea2fbe537b3c838c.jpg",
+    "static/media/location.png": "/sfan-contact-clone/static/media/location.1347d9de38a0d1771fb3.png",
+    "static/media/telephone.png": "/sfan-contact-clone/static/media/telephone.e7e0d452b020b03fba17.png",
+    "static/media/mail.png": "/sfan-contact-clone/static/media/mail.33f9bd7c90b620d90c02.png",
+    "static/media/reach.png": "/sfan-contact-clone/static/media/reach.765794d54a10ebaa1ebc.png",
+    "static/media/sfan.png": "/sfan-contact-clone/static/media/sfan.429fc475fbd87a68363d.png",
+    "index.html": "/sfan-contact-clone/index.html",
+    "main.70e49d60.css.map": "/sfan-contact-clone/static/css/main.70e49d60.css.map",
+    "main.06aa50e5.js.map": "/sfan-contact-clone/static/js/main.06aa50e5.js.map",
+    "787.370a98e2.chunk.js.map": "/sfan-contact-clone/static/js/787.370a98e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70e49d60.css",
+    "static/js/main.06aa50e5.js"
+  ]
+}
